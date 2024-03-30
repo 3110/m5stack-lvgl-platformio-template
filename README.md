@@ -1,0 +1,3 @@
+# PlatformIO IDEでLVGLを使ってM5Stack用プログラムを開発するための雛形
+
+M5DialでLVGL v9のベンチマークデモを動かせるようにしてあります。
