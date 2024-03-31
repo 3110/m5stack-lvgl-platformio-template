@@ -3,6 +3,8 @@
 M5DialでLVGL v9のベンチマークデモを動かせるようにしてあります。
 `env:lvgl-demo-benchmark-m5dial`は実機で，`env:lvgl-demo-benchmark-m5dial-emulator`はPC上のエミュレータで動きます。
 
+今のところWindows環境のみで動作します。
+
 ## 実装方法
 
 基本的に`user_app()`を実装すれば動くようになっています。
