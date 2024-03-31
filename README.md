@@ -1,6 +1,7 @@
 # PlatformIO IDEでLVGLを使ってM5Stack用プログラムを開発するための雛形
 
 M5DialでLVGL v9のベンチマークデモを動かせるようにしてあります。
+`env:lvgl-demo-benchmark-m5dial`は実機で，`env:lvgl-demo-benchmark-m5dial-emulator`はPC上のエミュレータで動きます。
 
 ## 実装方法
 

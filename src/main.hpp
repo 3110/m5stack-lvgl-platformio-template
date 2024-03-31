@@ -1,6 +1,6 @@
 #pragma once
 
-#if defined(ARDUINO_M5STACK_DIAL)
+#if defined(ARDUINO_M5STACK_DIAL) && !defined(USE_EMULATOR)
 #include <M5Dial.h>
 inline void M5_BEGIN(bool enableEncoder = false, bool enableRFID = false) {
     M5Dial.begin(enableEncoder, enableRFID);
@@ -25,5 +25,16 @@ inline void M5_UPDATE(void) {
 }
 inline M5GFX& M5_DISPLAY(void) {
     return M5.Display;
+}
+#endif
+
+#if defined(USE_EMULATOR)
+#include <unistd.h>
+inline void M5_DELAY(useconds_t usec) {
+    usleep(usec * 1000);
+}
+#else
+inline void M5_DELAY(uint32_t msec) {
+    delay(msec);
 }
 #endif

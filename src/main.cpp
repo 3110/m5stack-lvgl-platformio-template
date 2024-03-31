@@ -15,5 +15,5 @@ void setup(void) {
 
 void loop(void) {
     M5_UPDATE();
-    delay(10);
+    M5_DELAY(10);
 }
