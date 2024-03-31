@@ -2,15 +2,7 @@
 
 #include "lvgl_port_m5stack.hpp"
 
-#if defined(LV_USE_DEMO_BENCHMARK)
-#include <demos/lv_demos.h>
-inline void user_app(void) {
-    lv_demo_benchmark();
-}
-#else
-inline void user_app(void) {
-}
-#endif
+extern void user_app(void);
 
 void setup(void) {
     M5_BEGIN();
